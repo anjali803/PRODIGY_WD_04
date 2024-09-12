@@ -4,7 +4,8 @@ body {
     padding: 0;
     transition: background-color 0.5s ease;
     color: #000;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+    /* background: linear-gradient(to right, #6a11cb, #2575fc); */
+    background-color: yellow;
     
     
     
