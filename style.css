@@ -6,6 +6,8 @@ body {
     color: #000;
     background: linear-gradient(to right, #6a11cb, #2575fc);
     
+    
+    
 
   }
   div.navbar {
@@ -255,15 +257,8 @@ h1 {
   }
 }
 
-
-
-
-
-
-
 /* Project section */
 div#project {
-  
   margin: 100px 2px;
 }
 #project {
@@ -277,7 +272,6 @@ div#project {
 
 .card {
   border: 1px solid;
-  
   box-shadow: 2px 8px 28px;
   transform: translateY(18px);
   animation: fadeInUp 3s forwards ease-out;
@@ -326,4 +320,15 @@ img.card-img-top{
     max-width: 100%;
     margin-bottom: 23px;
 }
+}
+
+/* Experience */
+
+#experience{
+
+margin: 100px 20px;
+}
+
+.h1-heading{
+  text-align: center;
 }
