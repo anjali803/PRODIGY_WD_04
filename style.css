@@ -4,8 +4,8 @@ body {
     padding: 0;
     transition: background-color 0.5s ease;
     color: #000;
-    /* background: linear-gradient(to right, #6a11cb, #2575fc); */
-    background-color: yellow;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    
     
     
     
@@ -13,12 +13,10 @@ body {
   }
   div.navbar {
     width: 100%;
-    
-    background: #020718c7;
-    border: 3px solid #1f1f7766;
+    background: #0917476e;
+    border: 3px solid #2c2c3f66;
     top: 0;
     right: 0;
-    box-shadow: 2px 2px 2px #2b2f44;
 }
   nav {
     
@@ -278,7 +276,7 @@ h1 {
 
 /* Project section */
 div#project {
-  margin: 100px 2px;
+  margin: 60px 2px;
 }
 #project {
   margin: 40px 0px;
@@ -289,9 +287,13 @@ div#project {
   
 }
 
+h1.h1-heading{
+  margin: 20px;
+}
+
 .card {
   border: 1px solid;
-  box-shadow: 2px 8px 28px;
+  box-shadow: 1px 0px 10px;
   transform: translateY(18px);
   animation: fadeInUp 3s forwards ease-out;
 }
@@ -345,7 +347,7 @@ img.card-img-top{
 
 #experience{
 
-margin: 100px 20px;
+margin: 30px 20px;
 }
 
 .h1-heading{
