@@ -4,7 +4,7 @@ body {
     padding: 0;
     transition: background-color 0.5s ease;
     color: #000;
-    background-color: rgb(160 160 243);
+    background: linear-gradient(to right, #6a11cb, #2575fc);
     
 
   }
@@ -46,7 +46,6 @@ body {
 
   
 
-/* Home section */
 /* Home section */
 #home-section {
   display: flex;
@@ -206,106 +205,56 @@ h1 {
 }
 
 
-/* About section */
 
-
+/* About Section */
 #about-section {
-  height: 458px;
-  max-width: 1204px;
-  margin: 155px auto;
-  padding: 18px;
-  background-color: rgb(199 206 206 / 69%);
-  border-radius: 13px;
-  box-shadow: rgba(0, 0, 0, 0.1) 11px 20px 22px;
+  padding: 17px 125px;
+  margin: 108px 130px;
 }
 
-#about-section h2 {
-  color: #333;
+#professional-details, 
+.education-skills {
+  padding: 15px;
 }
 
-#download-resume {
-  background-color: rgb(7 60 59);
-  color: rgb(255, 255, 255);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 18px;
-  cursor: pointer;
-  font-size: 16px;
-  opacity: 0;
-  transform: translateY(18px);
-  animation: fadeInUp 1s forwards ease-out;
+/* Make the columns display in flex for wider screens */
+@media (min-width: 768px) {
+  #about-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #professional-details, 
+  .education-skills {
+    width: 45%;
+  }
 }
 
-
-#download-resume:hover {
-  background-color: #0056b3;
-}
-
-#professional-details,
-#skills {
-  margin-top: 20px;
-}
-
-#professional-details h3,
-#skills h3 {
-  color: #333;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  opacity: 0;
-  transform: translateY(18px);
-  animation: fadeInUp 3s forwards ease-out;
-}
-
-ul li {
-  padding: 4px 4px;
-  margin-bottom: 35px;
-  display: inline-block;
-  background-color: #839999;
-  border: 1px solid;
-  border-radius: 5px;
-  color: black;
-  
-}
-h3{
-  color: #333;
-}
-
-/* Responsive styles using media queries */
+/* Adjust padding for smaller screens */
 @media (max-width: 768px) {
   #about-section {
-    padding: 10px;
-     /* Adjust padding for smaller screens */
-    
+    display: block;
   }
 
-  #professional-details,
-  #edu,
-  #skills {
-    width: 100%; /* Make sections full width on smaller screens */
+  .education-skills {
+    padding: 10px 30px;
   }
-
 }
-@media (max-width: 500px) {
+
+/* Stack the sections on smaller screens */
+@media (max-width: 576px) {
   #about-section {
+    flex-direction: column;
     padding: 10px;
-    height: 800px;
-    
-  }
-
-  #download-resume {
-    width: 100%; /* Make the button full width on small screens */
   }
 
   #professional-details,
-  #edu,
-  #skills {
+  .education-skills {
     width: 100%;
+    margin-bottom: 20px;
   }
 }
+
 
 
 
